@@ -1,0 +1,148 @@
+@import url('https://fonts.google.com/specimen/Overpass');
+
+* {
+    box-sizing: border-box;
+    font-weight: 400, 700;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  hsl(216, 12%, 8%);
+    min-width: 100vw;
+}
+
+.review,
+.thanks {
+    background-color:  #252d37;
+    border-radius: 9%;
+    height: 400px;
+    margin-top: 10rem;
+    margin: auto;
+    padding: 2rem;
+    width: 350px;
+}
+
+.review img {
+    height: 50px;
+    margin-bottom: 1rem;
+    width: 50px;
+}
+
+main h2 {
+   color:#ffffff;
+}
+
+main p {
+    color: #959eac;
+    line-height: 25px;
+}
+
+.rate {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.number_1,
+.number_2,
+.number_3,
+.number_4,
+.number_5 {
+    align-items: center;
+    background-color: #121417;
+    border-radius: 100%;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+}
+
+.darkorange {
+    background-color: darkorange;
+}
+
+.number_1:hover,
+.number_2:hover,
+.number_3:hover,
+.number_4:hover,
+.number_5:hover {
+    background-color: #959eac;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.submit {
+    background-color: #fb7413;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 15%;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.submit:hover {
+    background-color: #ffffff;
+    color: #fb7413;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.thanks h1 {
+    align-self: center;
+    color: #ffffff;
+    display: flex;
+    justify-self: center;
+}
+
+.thanks img {
+    align-self: center;
+    display: flex;
+    height: 125px;
+    justify-self: center;
+    width: 200px;
+}
+
+.thanks p {
+    color:#959eac;
+    line-height: 25px;
+    text-align: center;
+}
+
+#value {
+    align-self: center;
+    background-color: #121417;
+    border-radius: 25px;
+    color: #fb741397;
+    display: flex;
+    justify-self: center;
+    padding-left: 2.5rem;
+    width: 80%;
+}
+
+.attribution { font-size: 11px; text-align: center; color: #fb7413; margin-top: 1.5rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 395px) {
+    .review,
+    .thanks {
+        background-color:  #252d37;
+        border-radius: 9%;
+        height: 400px;
+        margin-top: 10rem;
+        margin: auto;
+        padding: 1rem;
+        width: 300px;
+    }
+}
